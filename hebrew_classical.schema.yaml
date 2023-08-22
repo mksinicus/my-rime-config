@@ -1,0 +1,99 @@
+# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: hebrew_classical
+  name: "希伯来文（古典）"
+  version: "0.2.1"
+  author:
+    - mksinicus <marcuszhonggh@foxmail.com>
+  description: |
+    古典希伯来语字母输入，使用类似 SemKey 的基于较为通用的转写的方案。
+    大部分键位与 [rime-semkey](https://github.com/mksinicus/rime-semkey) 兼容。
+    词尾型使用 `;` 作为后缀。
+
+    鸣谢：
+    - polyhedron 的 rime-hebrew (https://github.com/biopolyhedron/rime-hebrew)
+    - Hongwei Zhang 的 SemKey (https://www.researchgate.net/publication/330501972)
+
+    本方案基于“无许可证”（The Unlicense）分发
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 希伯来文, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - punctuator  # 先於 editor 才會使空格作符號上屏
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+menu:
+  alternative_select_keys: "123456789"
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz`()[]-=;',.~^"
+  delimiter: ' '
+  auto_select: false # 
+
+translator:
+  dictionary: hebrew_classical
+  enable_user_dict: false
+  enable_sentence: true
+  comment_format:
+    - xform/^~(.*)$/$1/
+  preedit_format:
+    - 'xform a\- ā'
+    - 'xform e\- ē'
+    - 'xform i\- ī'
+    - 'xform o\- ō'
+    - 'xform u\- ū'
+    - 'xform a\^ â'
+    - 'xform e\^\. ệ' # 还真有这么个单字符
+    - 'xform e\^ ê'
+    - 'xform i\^ î'
+    - 'xform o\^ ô'
+    - 'xform u\^ û'
+    - 'xform a\( ă'
+    - 'xform e\( ĕ'
+    - 'xform o\( ŏ'
+    - 'xform e, ǝ'
+    - 'xform a\] ʾ'
+    - 'xform a\[ ʿ'
+    - 'xform b- ḇ'
+    - 'xform g- ḡ'
+    - 'xform d- ḏ'
+    - 'xform k- ḵ'
+    - 'xform p- p̄'
+    - 'xform t- ṯ'
+    - 'xform h\. ḥ'
+    - 'xform t\. ṭ'
+    - 'xform s\. ṣ'
+    - "xform s' ś"
+    - 'xform s, š'
+    # erase final form marker
+    - 'xform ; '
+    # erase whitespace on continuous input
+    - 'xform \s '
+
+# Incomplete
+punctuator:
+  use_space: true
+  half_shape: &punct
+    # ' ' : { commit: ' ' }
+    ':' : "׃"
+  full_shape: *punct
+

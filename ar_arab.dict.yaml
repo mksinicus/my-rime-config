@@ -1,0 +1,55 @@
+# Rime dictionary
+# enoding: utf-8
+# 
+# ar-arab schema by marco
+#
+# license: unlicense
+
+---
+name: ar_arab
+version: "0.1.220927"
+sort: original
+...
+
+أ	a'
+ا	a
+ب	b
+ت	t
+ث	t;
+ج	j
+ح	h.
+خ	k;
+د	d
+ذ	d;
+ر	r
+ز	z
+س	s
+ش	s;
+ص	s.
+ض	d.
+ط	t.
+ظ	z.
+ع	e
+غ	g;
+ف	f
+ق	q
+ك	k
+ل	l
+م	m
+ن	n
+ه	h
+و	w
+ي	y
+ئ	y'
+ى	i
+ۇ	u
+
+َ	A
+َا	AA
+ً	AN
+ِ	I
+ِي	II
+ٍ	IN
+ُ	U
+ُو	UU
+ٌ	UN

@@ -1,0 +1,39 @@
+# Rime dictionary
+#
+# 古代埃及语转写
+#
+# 许可证: Unlicense
+#
+
+---
+name: ancient_egyptian_translit
+version: '0.1.210331'
+sort: original
+...
+
+ꜣ	a
+j	j
+ı͗	jj
+y	y
+ꜥ	aa
+w	w
+b	b
+p	p
+f	f
+m	m
+n	n
+r	r
+h	h
+ḥ	hh
+ḫ	x
+ẖ	xx
+s	s
+š	ss
+q	q
+ḳ	qq
+k	k
+g	g
+t	t
+ṯ	tt
+d	d
+ḏ	dd

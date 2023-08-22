@@ -1,0 +1,15 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Container for extended dicts. Name follows the tradition
+#
+
+---
+name: terra_pinyin.extended
+version: "2023-03-24"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - terra_pinyin
+  - terra_pinyin.custom
+...

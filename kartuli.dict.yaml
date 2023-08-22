@@ -1,0 +1,73 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# kartuli/georgian/格魯吉亞語 by polyhedron
+#
+# 使用說明
+# 暫時先只放基本字母
+# 
+# Author:
+#  - polyhedron	<biopolyhedron@gmail.com>
+#
+# 版權歸作者所有
+#
+
+---
+name: kartuli
+version: "20190317"
+sort: original
+...
+
+ა	a
+ბ	b
+გ	g
+დ	d
+ე	e
+ვ	v
+ზ	z
+თ	t
+ი	i
+კ	k'
+ლ	l
+მ	m
+ნ	n
+ო	o
+პ	p'
+ჟ	zh
+რ	r
+ს	s
+ტ	t'
+უ	u
+ფ	p
+ქ	k
+ღ	gh
+ყ	q'
+შ	sh
+ჩ	ch
+ც	c
+ც	ts
+ძ	dz
+წ	c'
+წ	ts'
+ჭ	ch'
+ხ	x
+ხ	kh
+ჯ	j
+ჰ	h
+ჴ	q
+ჱ	ey
+ეჲ 	ey
+ჲ	y
+ვი	vi
+ჳ	vi
+ჰოი	hoi
+ჵ	hoi
+ჶ	f
+ჷ	E
+ჸ	Q
+ჹ	g
+ჼ	N
+ჺ	`
+ჽ	E'
+ჾ	X
+ჿ	w

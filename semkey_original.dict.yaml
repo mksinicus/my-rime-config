@@ -1,0 +1,162 @@
+# Rime dictionary
+#
+# SemKey 闪语转写字母（修饰字符前置版）
+# 
+# - 方案原作者：Hongwei Zhang (https://www.researchgate.net/publication/330501972)
+# - 修改者：mksinicus <marcuszhonggh@foxmail.com>
+#
+# 许可证：The Unlicense
+# 
+
+
+---
+name: semkey_original
+version: '0.1'
+sort: original
+...
+
+# bare letters
+a	a
+b	b
+c	c
+d	d
+e	e
+f	f
+g	g
+h	h
+i	i
+j	j
+k	k
+l	l
+m	m
+n	n
+o	o
+p	p
+q	q
+r	r
+s	s
+t	t
+u	u
+v	v
+w	w
+x	x
+y	y
+z	z
+`	`
+(	(
+)	)
+-	-
+;	;
+'	'
+,	,
+.	.
+~	~
+^	^
+# grave
+à	`a
+è	`e
+ì	`i
+ò	`o
+ù	`u
+# breve
+ă	(a
+ĕ	(e
+ĭ	(i
+ŏ	(o
+ŭ	(u
+ğ	(g
+ḫ	(h
+# hook
+ả	)a
+ẻ	)e
+ỉ	)i
+ỏ	)o
+ủ	)u
+# macron, bar
+ā	-a
+ē	-e
+ī	-i
+ō	-o
+ū	-u
+ḇ	-b
+ḡ	-g
+ḏ	-d
+ḵ	-k
+ṯ	-t
+# There is no single character for this
+p̄	-p
+# diaeresis
+ä	;a
+ë	;e
+ï	;i
+ö	;o
+ü	;u
+ÿ	;y
+# acute
+á	'a
+é	'e
+í	'i
+ó	'o
+ú	'u
+ǵ	'g
+ś	's
+ý	'y
+# c cedil
+ç	'c
+# caron
+č	,c
+ğ	,g
+ǰ	,j
+š	,s
+ž	,z
+# misc
+⸢	,[
+⸣	,]
+⸗	,=
+# schwa
+ǝ	,e
+# sub-/superscript
+ₓ	,x
+ᵗ	,t
+ᵈ	,d
+₁	,1
+₂	,2
+₃	,3
+₄	,4
+₅	,5
+₆	,6
+₇	,7
+₈	,8
+₉	,9
+₀	,0
+# underdot 
+ḍ	.d
+ḥ	.h
+ḳ	.k
+ḷ	.l
+ṣ	.s
+ṭ	.t
+ẓ	.z
+# overdot
+ġ	.g
+ṗ	.p
+# tilde
+ã	~a
+ẽ	~e
+ĩ	~i
+õ	~o
+ũ	~u
+ñ	~n
+# circumflex
+â	^a
+ê	^e
+î	^i
+ô	^o
+û	^u
+ĝ	^g
+ŝ	^s
+# alif and ayin
+ʾ	]a
+ʿ	[a
+ˀ	]q
+ˁ	[q

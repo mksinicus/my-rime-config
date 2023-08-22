@@ -1,0 +1,43 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: latin_extended
+  name: 拉丁字母扩展
+  version: '0.1.210405'
+  author: 
+    - kymot <marcuszhonggh@foxmail.com>
+  description: |
+    目前还名不副实的拉丁字母扩展。在 Windows 自带的 “美国英语-国际” 键盘支持的元音相关符号之外增加了长音符号支持，并且调整了输入顺序，使得单击引号可以直接正常输入。
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+
+menu:
+  page_size: 9
+
+speller:
+  alphabet: "!'()+-./0123456789:<=>?HL[\\]^`abcdefghijklmnopqrstuvwxyz|~\""
+  initials: "!()/0123456789:?HL\\]abcdefghijklmnopqrstuvwxyz|"
+  auto_select: true
+
+translator:
+  dictionary: latin_extended
+  enable_sentence: false
+  enable_user_dict: false
+  comment_format:
+    - xform/^~//
+
+key_binder:
+  import_preset: default

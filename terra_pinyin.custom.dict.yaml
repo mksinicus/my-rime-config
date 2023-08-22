@@ -1,0 +1,20 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: terra_pinyin.custom
+version: "2023-03-24"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+褪	tui4
+沓	da2
+疋	shu1
+回籠覺	hui2 long2 jiao4
+覺	jiao4
+丼	dong1
+覺	jiao4
+補覺	bu3 jiao4
+柏	bo2

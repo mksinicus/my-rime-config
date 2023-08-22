@@ -1,0 +1,63 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: semkey_original
+  name: 闪语转写字母（前）
+  version: '0.1'
+  author: 
+    - mksinicus <marcuszhonggh@foxmail.com>
+  description: |
+    输入方案参考了 Hongwei Zhang 的 [SemKey 输入法](https://www.researchgate.net/publication/330501972)。
+    有若干改动：
+    - 增加 p̄（目前 Unicode 无单独符号，故使用 U+70 U+304）；
+    - 考虑实用性，未加入 SemKey 的 Ctrl-Alt 系列符号；
+    - 使用 `[a` `]a` `[q` `]q` 表示 ʿ ʾ ˁ ˀ。
+
+    本方案是 rime-semkey 的变体方案，未经仔细测试，如有问题请和我联系。
+
+    本方案基于“无许可证”（The Unlicense）分发
+ 
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 转写, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    # - key_binder
+    - speller
+    - selector
+    - punctuator
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz1234567890`()[]-;',.~^="
+  initials: "abcdefghijklmnopqrstuvwxyz`()[]-;',.~^"
+  auto_select: true
+
+translator:
+  dictionary: semkey_original
+  enable_sentence: false
+  enable_user_dict: false
+  comment_format:
+    - xform/^~//
+
+# So that you don't have to tap twice
+punctuator:
+  use_space: true
+  half_shape: &punct
+    ' ' : { commit: ' ' }
+
+# key_binder:
+#   import_preset: default

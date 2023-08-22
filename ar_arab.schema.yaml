@@ -1,0 +1,82 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: ar_arab
+  name: "阿拉伯文-阿拉伯语"
+  version: "0.1.220927"
+  author:
+    - marco
+    
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [中文, 西文]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - punctuator
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+    - matcher
+  translators:
+    - punct_translator
+    - table_translator
+    
+menu:
+  alternative_select_keys: "123456789"
+
+speller:
+  alphabet: 'abcdefghijklmnopqrstuvwxyzACDEGHIKNOSTUWXY'';.'
+  delimiter: ' '
+  auto_select: false
+  
+translator:
+  dictionary: ar_arab
+  enable_user_dict: false
+  enable_sentence: true
+  #comment_format:
+    #- xform/^~(.*)$/$1/
+  preedit_format:
+    - "xform a' ʔ"
+    - "xform a ā"
+    - 'xform t; ṯ' # why does it crash anyway?
+    - "xform h\. ḥ"
+    - "xform k; ḳ"
+    - "xform d; ḏ"
+    - "xform s; š"
+    - "xform s\. ṣ"
+    - "xform d\. ḍ"
+    - "xform t\. ṭ"
+    - "xform z\. ẓ"
+    - "xform e ʕ"
+    - "xform g; ḡ"
+    
+punctuator:
+  half_shape: &punct
+    # ' ' : { commit: ' ' }
+    "1": "١"
+    "2": "٢"
+    "3": "٣"
+    "4": "٤"
+    "5": "٥"
+    "6": "٦"
+    "7": "٧"
+    "8": "٨"
+    "9": "٩"
+    "0": "٠"
+    "_": "ـ"
+    "{": "{"
+    "}": "}"
+    "[": "["
+    "]": "]"
+    "?": "؟"
+#  full_shape: *punct

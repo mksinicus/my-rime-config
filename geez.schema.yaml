@@ -1,0 +1,67 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: geez
+  name: "格厄兹字母"
+  version: "20230627"
+  author:
+    - 黑之圣雷
+  description: 	
+    基于格厄兹语读音（同时一定程度上参考原始闪语），不纯是阿姆哈拉语
+    元音/ɐ~ə/用a，/a/用A，第六序列/ə/或/∅/用r。软腭辅音区分/Kʷɐ/和/Kwɐ/，后者用大写W区分，此规则仅适用于软腭辅音，不适用于一般的/-wɐ/
+    /ʕ/是;、/ʔ/是'
+    肺部边擦/ɬ/是L，强势边擦/ɬʼ/是L'
+    强势音默认大写，但注意除了边擦较特别以外，例外还包括/ħ/是H、/ʃ/是X、/ʒ/是Z、/ŋ/是N（对比/h/是h、/χ/是x、/z/是z、/n/是n）
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 格厄兹字, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - punctuator  # 先於 editor 才會使空格作符號上屏
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+menu:
+  alternative_select_keys: "123456789"
+
+speller:
+  alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'';'
+  delimiter: ''
+  auto_select: true
+
+translator:
+  dictionary: geez
+  enable_user_dict: false
+  enable_sentence: true
+  comment_format:
+    - xform/^~(.*)$/$1/
+
+punctuator:  # 只須定義空格一個符號
+  use_space: true
+  half_shape: &punct
+    ' ' : { commit: ' ' }
+    "_": "ـ"
+    "{": "{"
+    "}": "}"
+    "[": "["
+    "]": "]"
+    "?": "؟"
+    ",": "،"
+#  full_shape: *punct
+

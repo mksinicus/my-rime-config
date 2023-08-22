@@ -1,0 +1,11 @@
+# encoding: utf-8
+# vim: set noet:
+
+---
+name: japanese.extra
+version: '20230503'
+sort: by_weight
+...
+
+哀	ai
+

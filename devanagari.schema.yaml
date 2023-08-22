@@ -1,0 +1,73 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+#
+# schema edited by k. on 2021-10-31.
+# features added: 
+# 1. Disabled user dict
+# 2. preedit_format set to resemble IAST. \
+#    Shift + Enter to enter transliterations.
+
+schema:
+  schema_id: devanagari
+  name: "天城體梵文"
+  version: "poly2014.04.17"
+  author:
+    - polyhedron<biopolyhedron@gmail.com>
+  description: |
+    按轉寫輸入梵文。常用附加符.和;。長音重複。
+    如有改進建議，歡迎和作者聯繫！
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ सं, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+
+menu:
+  alternative_select_keys: "ABCDEFGHIJ"
+
+speller:
+  alphabet: 'abcdefghijklmnopqrstuvxyz.,:;''`-0123456789'
+  delimiter: ' '
+  algebra:
+  - derive/^([^aeiouAEIOU])a$/$1/
+
+translator:
+  dictionary: devanagari
+  enable_user_dict: false
+  preedit_format:
+    # 直接反映 IAST
+    - 'xform aa ā'
+    - 'xform ii ī'
+    - 'xform uu ū'
+    - 'xform r\.\. ṝ'
+    - 'xform r\. ṛ'
+    - 'xform l\.\. ḹ'
+    - 'xform l\. ḷ'
+    - 'xform o\. ŏ'
+    - 'xform oo ō'
+    - 'xform nj ñ'
+    - 'xform ng ṅ'
+    - 'xform t\. ṭ'
+    - 'xform d\. ḍ'
+    - 'xform n\. ṇ'
+    - 'xform x ś'
+    - 'xform s\. ṣ'
+    - 'xform h\. ḥ'
+    - 'xform m\. ṃ'
+    # 清除连写时中间的空格
+    - 'xform \s '

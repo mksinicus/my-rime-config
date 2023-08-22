@@ -1,0 +1,45 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: kaomoji
+  name: 颜文字
+  version: '0.1'
+  author: 
+    - anon
+  description: |
+    颜文字，来自A岛和 kaomoji.json
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 颜文字, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz"
+  # initials: "abdfghjkmnpqrstwxy"
+  # auto_select: true
+
+translator:
+  dictionary: kaomoji
+  enable_sentence: false
+  enable_user_dict: false
+  # comment_format:
+  #   - xform/^~//
+
+key_binder:
+  import_preset: default

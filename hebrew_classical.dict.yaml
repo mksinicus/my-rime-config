@@ -1,0 +1,135 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# hebrew_classical
+#
+# Author:
+# - mksinicus <marcuszhonggh@foxmail.com>
+#
+# 暂未加入声调附标
+#
+# 受到以下项目启发：
+# - polyhedron 的 rime-hebrew (https://github.com/biopolyhedron/rime-hebrew)
+# - Hongwei Zhang 的 SemKey (https://www.researchgate.net/publication/330501972)
+#
+# 分发遵循“无许可证”（The Unlicense）
+#
+
+---
+name: hebrew_classical
+version: "0.2.1"
+sort: original
+...
+
+## vowels
+# singles
+ַ	a
+ָ	a-
+ָ	o
+ִ	i
+ִ	i-
+ֵ	e-
+ֶ	e
+ֹ	o-
+# HOLAM HASER FOR VAV, for rainy days
+ֺ	o--w
+ֻ	u
+ֻ	u-
+# y-mater
+ָי	a^
+ִי	i^
+ֵי	e^
+ֶי	e^.
+# w-mater
+וֺ	o^
+וּ	u^
+# h-mater: omitted
+# ḥāṭēp̄
+ֱ	e(
+ֲ	a(
+ֳ	o(
+# Schwa
+ְ	e,
+
+## consonants
+# diacritic dāḡēš/mappîq
+ּ	-h
+
+א	a]
+בּ	b
+בּ	bb
+ב	b-
+גּ	g
+גּ	gg
+ג	g-
+# ג׳	gj
+דּ	d
+דּ	dd
+ד	d-
+ה	h
+הּ	hh
+# ה	'h
+ו	w
+ז	z
+זּ	zz
+# ז׳	zh
+# ז׳	zj
+ח	h.
+ט	t.
+טּ	t.t.
+י	y
+יּ	yy
+ך	k-;
+כ	k-
+כּ	k
+כּ	kk
+ל	l
+לּ	ll
+ם	m;
+מ	m
+מּ	mm
+ן	n;
+נ	n
+נּ	nn
+ס	s
+סּ	ss
+ע	a[
+ף	p-;
+פ	p-
+פּ	p
+פּ	pp
+ץ	s.;
+צ	s.
+צּ	s.s.
+# צ׳	cj
+# צ׳	ch
+ק	q
+קּ	qq
+ר	r
+# ש	sh
+# we use combining forms
+שׁ	s,
+שּׁ	s,s,
+שׂ	s'
+שּׂ	s's'
+# or use precomposed letters, but they are in the 'presentation forms' block
+# and are therefore not supposed to be used independently.
+# שׂ	s'
+# שּׂ	s's'
+# שׁ	s,
+# שּׁ	s,s,
+תּ	t
+תּ	tt
+ת	t-
+# ׳	j
+# ״	jj
+
+## punctuations
+־	=
+׃	:
+
+## misc, may subject to change
+# "holam haser for vav"
+וֺ	wo-
+# placeholder dotted circle, inspired by polyhedron's devanagari schema
+◌	ooo

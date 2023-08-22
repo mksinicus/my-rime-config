@@ -1,0 +1,373 @@
+# Rime dictionary
+# encoding: utf-8
+# 
+# From: https://github.com/chenshinshi/kaomoji.dict.yaml
+
+---
+name: kaomoji
+version: "0.1"
+sort: original
+...
+
+# 来自A岛颜文字嘴形目录
+# 嘲笑
+(-∀-ﾉ)ﾉ	adc
+(o-∀-))	adc
+
+
+# 躲
+|∀ﾟ'	add
+|∀`)'	add
+|д`)'	add
+|дﾟ)'	add
+|ω・´)'		add
+|ー`)'	add
+|-`)	add
+|ｮ･｀ｪ･)	add
+
+
+# 调皮
+(ﾟ3ﾟ)	adp
+(`ε´)	adp
+ヾ(´ε`ヾ)	adp
+(`ε´(つ*⊂)	adp
+(｢･ω･)｢	adp
+(σﾟ∀ﾟ)σ	adp
+σ`∀´)	adp
+(`ヮ´)	adp
+⊂彡☆))д´)'	adp
+⊂彡☆))д`)'	adp
+⊂彡☆))∀`)'	adp
+(´∀((☆ミつ	adp
+
+# 高兴
+(ﾟ∀。)	adw
+(*ﾟ∀ﾟ*)	adw
+(ﾟ∀ﾟ)	adw
+(ノﾟ∀ﾟ)ノ	adw
+(＾o＾)ﾉ	adw
+(*´∀`)	adw
+(*ﾟ∇ﾟ)	adw
+(´∀`)	adw
+(ゝ∀･)	adw
+(・∀・)	adw
+(｡◕∀◕｡)	adw
+(〃∀〃)	adw
+(/ω＼)	adw
+
+# 惊慌
+(ﾟдﾟ)	adj
+(´ﾟДﾟ`)	adj
+(|||ﾟдﾟ)	adj
+Σ(ﾟдﾟ)	adj
+'ﾟÅﾟ)	adj
+(((ﾟдﾟ)))	adj
+(ﾟДﾟ≡ﾟДﾟ)	adj
+(д)ﾟﾟ	adj
+(☉д⊙)	adj
+(;ﾟдﾟ)	adj
+(σﾟдﾟ)σ	adj
+(╬ﾟдﾟ)	adj
+(`д´)	adj
+<(｀Д´；)>	adj
+
+# 难过
+(つд⊂)	adn
+(>д<)	adn
+(TдT)	adn
+(-д-)	adn
+(´д`)	adn
+(*´д`)	adn
+｡ﾟヽ(ﾟ´Д`)ﾉﾟ｡	adn
+(;´Д`)	adn
+･ﾟ(ﾉд`ﾟ)	adn
+ﾟ(つд`ﾟ)	adn
+<(＿　＿)> 	adn
+
+# 卖萌
+(´ρ`)	adm
+(=ﾟωﾟ)=	adm
+(ﾟωﾟ)	adm
+(oﾟωﾟo)	adm
+(*´ω`*)	adm
+ヾ(´ωﾟ｀)	adm
+( ^ω^)	adm
+(・ω・)	adm
+(｀･ω･)	adm
+(`・ω・´)	adm
+(´・ω・`)	adm
+(´・ω)	adm
+(｀・ω)	adm
+（<ゝω・）☆	adm
+٩( 'ω' )و	adm
+(≧▽≦)	adm
+(｡･ｗ･｡)	adm
+_(:3」∠)_	adm
+
+# 严肃
+(・_ゝ・)	ady
+(´_ゝ`)	ady
+(´_っ`)	ady
+(`_っ´)	ady
+(´ー`)	ady
+(`ー´)	ady
+(*ﾟーﾟ)	ady
+(・ー・)	ady
+(乂`д´)	ady
+(o'д')┌	ady
+
+# 选自kaomoji.json
+
+# 早上好
+吱'`奥━━━(｡・∀・)ﾉ━━━安	kozsh
+GOOM──ヽ(｡´・∀・｀｡)ﾉ──ONING	kozsh
+(ｏ'∀')ノ｡+｡ﾟ☆Good Morning☆ﾟ｡+｡ヽ('∀'ｏ)	kozsh
+早上好♪ヽ(o＾─＾o)ﾉ	kozsh
+ヽ(ｏﾟｪﾟｏ)ﾉ 早安!!	kozsh
+
+# 你好
+HELLO～♪(｀・∀・´)ﾉ	konh
+(o´ﾉωﾉ｀o)大家…ヽ(o´・∀・｀o)ﾉ好♪	konh
+尼嚎──ヾ(≧∀≦)ﾉ──♪	konh
+吃了吗───ヾ(｡・∀・｡)ノ───您!!	konh
+｡o☆好久(P∀｀q｡)不见☆o｡	konh
+好久不见(｡・ω・｡)ﾉ	konh
+好久不见！(>∀<)ﾉ	konh
+大家好(〃▽〃)ゞ	konh
+
+# 晚好
+(o'ω')o†+ Good Evening +†o('ω'o)	kowh
+晚━━━━ヾ(o'∀｀o)ﾉ━━━好	kowh
+(p'v`【★ Good Evening ★】'v`q)	kowh
+晚上好(ｏ'∀'ｏ)ﾉ))	kowh
+
+# 回家
+我回来啦───(｡・∀・｡)ﾉ───♪	kohj
+小跑ε=ε=ヾ(o´・∀・｀)ﾉ我回来啦！	kohj
+(ｏ'O'ｏ)我！(ｏ'д'ｏ)回！(ｏ'ヮ'ｏ)来！(ｏ'∀'ｏ)ゞ啦！	kohj
+欢迎回来 (≧▽≦)b	kohj
+迎回───ヽ(｡・ω・｡)ﾉ───♪	kohj
+(ﾉ｀・∀・)ﾉ 你回来啦ー！	kohj
+
+# 再见
+ヾ(；ω；) bye bye	kozj
+掰掰！(≧▽≦)ﾉ挥挥))	kozj
+Go(´・3・｀)ﾉ))Bye	kozj
+再见・ﾟ・(PД｀q｡)・ﾟ・	kozj
+【孤零零】v_v｡)ﾉ)) 再见	kozj
+bye───(｀・ω・´)ﾉ───bye	kozj
+・::・:(´-з) See You Again (ε-｀):・::・	kozj
+'∀'o)ﾉ))明天见！	kozj
+挥挥((ヾ(｡・д・｡)明天见ｰ♪	kozj
+(b｀・3・)b))慢走♪	kozj
+
+
+# 晚安/慰劳
+晚──(o・ω・o)ゝ──安	kowa
+晚安！(≧▽≦)ゝ	kowa
+晚安 (*ﾟーﾟ)ﾉ挥挥))	kowa
+辛苦啦ー！(｡・д・｡)ﾉ挥	kowa
+辛苦啦(o・ω・o)ゝ	kowa
+ZZzz…(。-ω-)..ooO((【•:*:~梦~:*:•】))	kowa
+
+# 应酬
+# 收到
+∑d(ﾟдﾟ)收到!!	kosd
+收到(｡>д<｡)ゞ	kosd
+('Д')ゞ收到	kosd
+收──(｡ゝω・)b──到!!	kosd
+收到(*ﾟｪﾟ)ゝ	kosd
+收到！(ｏ'∀'ｏ)ゝ	kosd
+∠( `ω´*)收到	kosd
+马上到！ ┌(；´ﾟｪﾟ)┘	kosd
+
+# 招待
+|进门|ｮﾟДﾟ )欸打扰您啦	kozd
+|轻悄悄|・ﾉω・)打扰啦	kozd
+|出门|o'ω'o)ゝ感谢招待	kozd
+|出门|ﾟｪﾟ)b感谢招待	kozd
+欢迎──ヽ(´ヮ｀)ﾉ───ｲ	kozd
+欢迎♪(oゝω・o)b	kozd
+欢迎！((ヾ(o´▽｀o)ノ))	kozd
+
+
+
+# 感谢
+请多 (o・ω・)人(・ω・o) 指教！	kogx
+请多指教!!∑(｡>д<｡)ゞ	kogx
+(　´艸｀)请 (っ´▽｀)っ))多指教	kogx
+3Q──ヾ('∀`)ﾉ──♪	kogx
+┏○)) 万分ﾞ━━━━━━━━感激！	kogx
+ヽ(o'д'o)ﾉ谢谢你♪	kogx
+
+
+# 祝贺
+恭喜───ヾ(o'∀｀o)ﾉ───!!	kozh
+恭喜！ヽ(´ー｀)ノ	kozh
+(b｀・Д・)b恭喜♪	kozh
+( ´∀`ﾉﾉ☆鼓掌	kozh
+( ﾟДﾟﾉﾉ☆鼓掌	kozh
+
+# 抱歉
+对不起(人д｀o≡o´д人)我错了	kobq
+对不起 (：D)|￣|＿	kobq
+(´・д・｀)ゞ对不起	kobq
+|面壁|ヽ(´･_`･｡)反省…	kobq
+对不起我错了！(人ω'*)	kobq
+
+
+# 语气词
+捏♪(σ´ω｀)σ	koyq
+(σﾟ∀ﾟ)σ捏!!	koyq
+捏！(σ｀・д・)σ	koyq
+(´・ε・｀)誒——	koyq
+
+# 嗯
+(pﾟｪﾟq)嗯	koen	
+o(｀・д・´)o嗯!!	koen
+(´・ω・｀)嗯？	koen
+(´-ω・)嗯？	koen
+(｡-｀ω´-)嗯嗯	koen
+(*ﾟｪﾟ))嗯嗯	koen
+( ｢'д')在哪	koen
+
+
+# 客气
+(ヾﾉ・∀・｀)太客气啦	kokq
+ヾﾉ≧∀≦)太客气啦!!	kokq
+
+# 不要/别闹
+ヾ(-ω-；)别闹	koby
+(´・д・｀)不要ﾞkoby	
+ヾ(≧Д≦)ﾉ))别啊	koby
+(´；д；｀)别啊	koby
+(-∀-ﾉ)ﾉ	koby
+ヾﾉ´･ω･)	koby
+
+# 不懂
+(｡ ・ω・))不太懂	koen
+
+
+# 观察
+( ・ω・)_ _))观察	kogc
+
+# 同意
+加我(´∀`∩	koty
+
+# 颜文字配件，来自kaomoji-generator与搜狗颜文字
+# 眼睛 
+^^	koyj
+⌒⌒	koyj
+´`	koyj
+`´	koyj
+・・	koyj
+￣￣	koyj
+◕◕	koyj
+•́•̀	koyj
+•̀•́	koyj
+˘˘	koyj
+★★	koyj
+><	koyj
+≧≦	koyj
+°°	koyj
+✯✯	koyj
+☆☆	koyj
+♡♡	koyj
+❤❤	koyj
+╯╰	koyj
+ಥಥ	koyj
+ʘʘ	koyj
+๑๑	koyj
+ಡಡ	koyj
+ΦΦ	koyj
+⇀⇀	koyj
+↼↼	koyj
+￢￢	koyj
+ÒÒ	koyj
+눈눈	koyj
+ᗒᗕ	koyj
+▼▼	koyj
+●●	koyj
+︺︺	koyj
+︶︶	koyj
+〒〒	koyj
+TT	koyj
+μμ	koyj
+个个	koyj
+
+_	koz
+ω	koz
+ヘ	koz
+︿	koz
+﹏	koz
+д	koz
+益	koz
+з	koz
+ﾛ	koz
+□	koz
+ｰ	koz
+з	koz
+∇	koz
+⌒	koz
+ｍ	koz
+∀	koz
+I	koz
+▿	koz
+‿	koz
+‿‿	koz
+3	koz
+◡	koz
+︶	koz
+//ε//	koz
+ヮ	koz
+ᗣ	koz
+
+()	kol
+
+ノ	kos
+ﾉ"""	kos
+ヾ	kos
+ヽ､	kos
+σ	kos
+٩	kos
+っ	kos
+ﾍ	kos
+db	kos
+y	kos
+︿︿	kos
+oo	kos
+ᕦᕤ	kos
+φ	kos
+UU	kos
+ψ	kos
+凸	kos
+ლ	kos
+
+
+
+♪	kot
+*	kot
+╬	kot
+;	kot
+∑	kot
+─=≡	kot
+ε=	kot
+=3	kot
+;	kot
+╥╥	kot
+๑๑	kot
+灬灬	kot
+✿	kot
+✧*｡	kot
+＼＼\//／／	kot
+
+# smily
+:-)	kos
+:-D	kos
+:-(	kos
+:P	kos
+=) 	kos
+=(	kos
+:-I 	kos
+:-O	kos
+XD	kos
