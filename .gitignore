@@ -1,0 +1,4 @@
+*.userdb
+sync/
+build/
+# opencc/
