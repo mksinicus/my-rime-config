@@ -40,7 +40,7 @@ switches:
     # Edit the following line to change the default character style
     #    [0 = OpenCC Traditional Chinese; 1 = Hong Kong TC; 2 = Taiwan TC; 3 = Mainland Simplified Chinese]
     # Or remove to remember user setting
-    reset: 1
+    # reset: 1
   - name: ascii_punct
     states: [ 。，, ．， ]
   - name: emoji_suggestion

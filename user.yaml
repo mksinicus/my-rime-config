@@ -1,5 +1,5 @@
 var:
-  last_build_time: 1691762244
+  last_build_time: 1692790317
   option:
     ascii_punct: false
     full_shape: false
@@ -21,11 +21,11 @@ var:
     greek_polytonic: 1690438143
     hebrew: 1678304740
     hebrew_classical: 1686946166
-    html_entities: 1691745153
+    html_entities: 1692535981
     ipa_yunlong: 1668519951
-    ipa_yunlong_old: 1691347794
-    japanese: 1691748172
-    jyut6ping3: 1690300835
+    ipa_yunlong_old: 1692359720
+    japanese: 1692581855
+    jyut6ping3: 1692790147
     kaomoji: 1690015614
     kyril_international: 1680165717
     latin_extended: 1687944144
@@ -35,9 +35,9 @@ var:
     semkey_reversed: 1679260842
     td_pinyin: 1669376008
     td_pinyin_flypy: 1671262511
-    terra_pinyin: 1677366526
+    terra_pinyin: 1691821603
     test: 1672749986
-    toned_zhupin: 1691749012
+    toned_zhupin: 1692790175
     toned_zhupin_test: 1672750748
     tupa: 1678437210
     xhup: 1669362304

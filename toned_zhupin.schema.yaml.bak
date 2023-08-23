@@ -110,8 +110,67 @@ translator:
   # dictionary: terra_pinyin
   spelling_hints: 5
   prism: toned_zhupin
-  # 预编辑区的转换，根据输入码。打算弄成注音字母，以 C-RET 上屏
-  preedit_format: Null
+  # 预编辑区的转换，根据输入码。以 C-RET 上屏
+  # 目前只能实现单字。双拼复用了字母，导致不好用正则划分音节。
+  preedit_format:
+  # 处理拼音中的特殊组合
+  - xform ([iu])e $1ㄝ
+  - xform ([nl]v)e $1ㄝ
+  - xform eh ㄝ
+  - xform ([jqx])u $1ㄩ
+  - xform ([nl])v $1ㄩ
+  - xform yi ㄧ
+  - xform wu ㄨ
+  - xform yu ㄩ
+  - xform ^er ㄦ
+  - xform ^([viurzcs])i $1
+  # 正常的声母
+  - xform ^b ㄅ
+  - xform ^p ㄆ
+  - xform ^m ㄇ
+  - xform ^f ㄈ
+  - xform ^d ㄉ
+  - xform ^t ㄊ
+  - xform ^n ㄋ
+  - xform ^l ㄌ
+  - xform ^g ㄍ
+  - xform ^k ㄎ
+  - xform ^h ㄏ
+  - xform ^j ㄐ
+  - xform ^q ㄑ
+  - xform ^x ㄒ
+  - xform ^v ㄓ
+  - xform ^i ㄔ
+  - xform ^u ㄕ
+  - xform ^r ㄖ
+  - xform ^z ㄗ
+  - xform ^c ㄘ
+  - xform ^s ㄙ
+  - xform ^y ㄧ
+  - xform ^w ㄨ
+  # 处理零声母，添加等会删去的占位符
+  - xform ^a([dxbg]) \|$1
+  - xform ^e([cnh]) \|$1
+  - xform ^o([f]) \|$1
+  - xform (.)i $1ㄧ
+  - xform (.)u $1ㄨ
+  - xform (.)a $1ㄚ
+  - xform (.)o $1ㄛ
+  - xform (.)e $1ㄜ
+  - xform (.)x $1ㄞ
+  - xform (.)c $1ㄟ
+  - xform (.)d $1ㄠ
+  - xform (.)f $1ㄡ
+  - xform (.)b $1ㄢ
+  - xform (.)n $1ㄣ
+  - xform (.)g $1ㄤ
+  - xform (.)h $1ㄥ
+  - xform/\|//
+  # 声调
+  - xform (..+)q $1ˉ
+  - xform (..+)w $1ˊ
+  - xform (..+)r $1ˇ
+  - xform (..+)s $1ˋ
   # 候选词区的转换，根据词典。以 C-S-RET 上屏
   # Copied from terra_pinyin, original author: 佛振 <chen.sst@gmail.com>
   comment_format:

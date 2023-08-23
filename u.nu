@@ -6,7 +6,7 @@ use std assert
 export def main [] {
   # default function
   assert-pwd
-  let msg = date now | date format %F | "Update " + $in
+  let msg = date now | format date %F | "Update " + $in
   gacp -m $msg
 }
 
