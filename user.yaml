@@ -1,11 +1,11 @@
 var:
-  last_build_time: 1697768292
+  last_build_time: 1697878757
   option:
     ascii_punct: false
     full_shape: false
     simplification: true
     zh_hant: true
-  previously_selected_schema: toned_zhupin
+  previously_selected_schema: occidental
   schema_access_time:
     ancient_egyptian_translit: 1679254902
     "ar-arab": 1664279609
@@ -21,16 +21,16 @@ var:
     greek_polytonic: 1690438143
     hebrew: 1678304740
     hebrew_classical: 1686946166
-    html_entities: 1697392856
+    html_entities: 1697856491
     ipa_yunlong: 1668519951
-    ipa_yunlong_old: 1695565254
-    japanese: 1697198151
+    ipa_yunlong_old: 1697858285
+    japanese: 1697878556
     jyut6ping3: 1696610677
     kaomoji: 1690015614
     kyril_international: 1697723732
     latin_extended: 1687944144
     luna_pinyin: 1661084562
-    occidental: 1697768294
+    occidental: 1697878760
     semkey: 1684147156
     semkey_original: 1679262382
     semkey_reversed: 1679260842
@@ -38,7 +38,7 @@ var:
     td_pinyin_flypy: 1671262511
     terra_pinyin: 1696773711
     test: 1672749986
-    toned_zhupin: 1697768323
+    toned_zhupin: 1697878559
     toned_zhupin_test: 1672750748
     tupa: 1678437210
     xhup: 1669362304

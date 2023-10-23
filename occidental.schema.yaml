@@ -11,6 +11,11 @@ schema:
   description: |
     主要参考了Lexilogos的欧洲语言键盘（https://www.lexilogos.com/keyboard/index.htm）。
 
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ Occidental, ASCII ]
+
 engine:
   processors:
     - ascii_composer
@@ -33,7 +38,7 @@ menu:
   alternative_select_keys: "123456789"
 
 speller:
-  alphabet: "aeiou/\\^-.~wytcd=,nsvzr'jghbfmpkl?(AEIOUWYTCDNSZRJGHBFMPKL\"-!`"
+  alphabet: "aeiou/\\^-.~wytcd=,nsvzr'jghbfmpkl?([]<>AEIOUWYTCDNSZRJGHBFMPKL\"-!`"
   initials: "\\"
   auto_select: true
 
