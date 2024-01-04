@@ -4,7 +4,7 @@
 
 ---
 name: terra_pinyin.custom
-version: "2023-03-24"
+version: "2024-01-04"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -18,3 +18,4 @@ use_preset_vocabulary: true
 覺	jiao4
 補覺	bu3 jiao4
 柏	bo2
+呱	gua1
