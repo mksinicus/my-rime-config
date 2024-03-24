@@ -4,7 +4,7 @@
 schema:
   schema_id: semkey_original
   name: 闪语转写字母（前）
-  version: '0.2.1'
+  version: '0.2'
   author: 
     - mksinicus <marcuszhonggh@foxmail.com>
     - Mishiro Shinohara <mishiro@sisu1949.onmicrosoft.com>
@@ -43,8 +43,8 @@ engine:
     - table_translator
 
 speller:
-  alphabet: "abcdefghijklmnopqrstuvwxyz1234567890`()[]-;',.~^=/"
-  initials: "abcdefghijklmnopqrstuvwxyz`()[]-;',.~^/"
+  alphabet: "abcdefghijklmnopqrstuvwxyz1234567890`()[]-;',.~^="
+  initials: "abcdefghijklmnopqrstuvwxyz`()[]-;',.~^"
   auto_select: true
 
 translator:
